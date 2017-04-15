@@ -6,7 +6,7 @@
  * 
  * Node.js icin 
  *      
- *      var ttablosu = require(ttablosu.js);    // <- duzenle: ttablosu.js dosyasinin yolu
+ *      var ttablosu = require("ttablosu.js");    // <- duzenle: ttablosu.js dosyasinin yolu
  *      var tdegeri = ttablosu.tablodegerihesapla({df: 1, alfa: 0.05});     // df = 1
  *      console.log(tdegeri);    // -> 6.314
  * 

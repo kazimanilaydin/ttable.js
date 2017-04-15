@@ -29,7 +29,7 @@ T distribution table calculations / T dağılımı tablosu hesaplamaları
      * 
      * on Node.js 
      *      
-     *      var ttable = require(ttable.js);    // <- edit: ttable.js path
+     *      var ttable = require("ttable.js");    // <- edit: ttable.js path
      *      var tvalue = ttable.ttablevaluecalculate({df: 1, alpha: 0.05});     // df = 1
      *      console.log(tvalue);    // -> 6.314
      * 
@@ -74,7 +74,7 @@ T distribution table calculations / T dağılımı tablosu hesaplamaları
      * 
      * Node.js icin 
      *      
-     *      var ttablosu = require(ttablosu.js);    // <- duzenle: ttablosu.js dosyasinin yolu
+     *      var ttablosu = require("ttablosu.js");    // <- duzenle: ttablosu.js dosyasinin yolu
      *      var tdegeri = ttablosu.tablodegerihesapla({df: 1, alfa: 0.05});     // df = 1
      *      console.log(tdegeri);    // -> 6.314
      * 

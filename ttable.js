@@ -6,7 +6,7 @@
  * 
  * on Node.js 
  *      
- *      var ttable = require(ttable.js);    // <- edit: ttable.js path
+ *      var ttable = require("ttable.js");    // <- edit: ttable.js path
  *      var tvalue = ttable.ttablevaluecalculate({df: 1, alpha: 0.05});     // df = 1
  *      console.log(tvalue);    // -> 6.314
  * 

@@ -23,7 +23,7 @@ T distribution table calculations / T dağılımı tablosu hesaplamaları
 
    /**
      * 
-     * @author: KazÄ±m AnÄ±l AYDIN @kazimanilaydin
+     * @author: Kazım Anıl AYDIN @kazimanilaydin
      * 
      * Usage: 
      * 

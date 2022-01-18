@@ -24,19 +24,19 @@
 var ttable = (function(){
     /**
      * 
-     * -> ttable_datas["df{X}"][0] -> alpha 0,25    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.000
-     * -> ttable_datas["df{X}"][1] -> alpha 0,20    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.376
-     * -> ttable_datas["df{X}"][1] -> alpha 0,15    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.963
-     * -> ttable_datas["df{X}"][1] -> alpha 0,10    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 3.078
-     * -> ttable_datas["df{X}"][2] -> alpha 0,05    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 6.314
-     * -> ttable_datas["df{X}"][3] -> alpha 0,025   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 12.706
-     * -> ttable_datas["df{X}"][4] -> alpha 0,01    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 31.821
-     * -> ttable_datas["df{X}"][5] -> alpha 0,005   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 63.657
+     * -> ttable_data["df{X}"][0] -> alpha 0,25    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.000
+     * -> ttable_data["df{X}"][1] -> alpha 0,20    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.376
+     * -> ttable_data["df{X}"][1] -> alpha 0,15    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.963
+     * -> ttable_data["df{X}"][1] -> alpha 0,10    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 3.078
+     * -> ttable_data["df{X}"][2] -> alpha 0,05    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 6.314
+     * -> ttable_data["df{X}"][3] -> alpha 0,025   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 12.706
+     * -> ttable_data["df{X}"][4] -> alpha 0,01    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 31.821
+     * -> ttable_data["df{X}"][5] -> alpha 0,005   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 63.657
      * 
      * ONE-TALL
      * 
      */ 
-    var ttable_datas = {
+    var ttable_data = {
 
         df1:   [ 1.000, 1.376, 1.963, 3.078, 6.314, 12.706, 31.821, 63.657],
         df2:   [ 0.816, 1.061, 1.386, 1.886, 2.920, 4.303, 6.965, 9.925],
@@ -86,7 +86,7 @@ var ttable = (function(){
         
         var _df = "df" + df;
         
-        if(df > 1000 || ttable_datas[_df.toString()] == undefined){ _df = "dfInf"};
+        if(df > 1000 || ttable_data[_df.toString()] == undefined){ _df = "dfInf"};
 
         var _alpha = (alpha == 0.25) ? 0 : 
                     (alpha == 0.20) ? 1 :
@@ -99,14 +99,14 @@ var ttable = (function(){
         
         if(alpha == 0.50){return 0.000;}
 
-        var t = ttable_datas[_df.toString()][_alpha];
+        var t = ttable_data[_df.toString()][_alpha];
 
         return t;
     }
 
     return {
 
-        ttable_datas: ttable_datas,
+        ttable_data: ttable_data,
         ttablevaluecalculate: ttablevaluecalculate
 
     };

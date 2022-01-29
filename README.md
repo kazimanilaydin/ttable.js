@@ -6,14 +6,14 @@ T distribution table calculations / T dağılımı tablosu hesaplamaları
   ```javascript
   /**
      * 
-     * -> ttable_datas["df{X}"][0] -> alpha 0,25    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.000
-     * -> ttable_datas["df{X}"][1] -> alpha 0,20    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.376
-     * -> ttable_datas["df{X}"][1] -> alpha 0,15    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.963
-     * -> ttable_datas["df{X}"][1] -> alpha 0,10    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 3.078
-     * -> ttable_datas["df{X}"][2] -> alpha 0,05    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 6.314
-     * -> ttable_datas["df{X}"][3] -> alpha 0,025   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 12.706
-     * -> ttable_datas["df{X}"][4] -> alpha 0,01    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 31.821
-     * -> ttable_datas["df{X}"][5] -> alpha 0,005   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 63.657
+     * -> ttable_data["df{X}"][0] -> alpha 0,25    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.000
+     * -> ttable_data["df{X}"][1] -> alpha 0,20    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.376
+     * -> ttable_data["df{X}"][1] -> alpha 0,15    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 1.963
+     * -> ttable_data["df{X}"][1] -> alpha 0,10    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 3.078
+     * -> ttable_data["df{X}"][2] -> alpha 0,05    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 6.314
+     * -> ttable_data["df{X}"][3] -> alpha 0,025   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 12.706
+     * -> ttable_data["df{X}"][4] -> alpha 0,01    X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 31.821
+     * -> ttable_data["df{X}"][5] -> alpha 0,005   X = 1...30 40 60 80 100 1000 Inf  **for X = 1 --result -> 63.657
      * 
      * ONE-TALL
      * 
